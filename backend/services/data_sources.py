@@ -84,35 +84,21 @@ class IPCCDataSource(BaseDataSource):
         
         # IPCC AR6 Report URLs (these would be actual URLs in production)
         ipcc_reports = [
-            {
-                "title": "AR6 Climate Change 2021: The Physical Science Basis",
-                "url": "https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_Full_Report.pdf",
-                "filename": "IPCC_AR6_WGI_Full_Report.pdf",
-                "category": "Assessment Report",
-                "year": 2021
-            },
-            {
-                "title": "AR6 Climate Change 2022: Impacts, Adaptation and Vulnerability",
-                "url": "https://www.ipcc.ch/report/ar6/wg2/downloads/report/IPCC_AR6_WGII_Full_Report.pdf",
-                "filename": "IPCC_AR6_WGII_Full_Report.pdf",
-                "category": "Assessment Report",
-                "year": 2022
-            },
-            {
-                "title": "AR6 Climate Change 2022: Mitigation of Climate Change",
-                "url": "https://www.ipcc.ch/report/ar6/wg3/downloads/report/IPCC_AR6_WGIII_Full_Report.pdf",
-                "filename": "IPCC_AR6_WGIII_Full_Report.pdf",
-                "category": "Assessment Report",
-                "year": 2022
-            },
-            {
-                "title": "Special Report on Global Warming of 1.5°C",
-                "url": "https://www.ipcc.ch/site/assets/uploads/sites/2/2019/06/SR15_Full_Report_High_Res.pdf",
-                "filename": "IPCC_SR15_Full_Report.pdf",
-                "category": "Special Report",
-                "year": 2018
-            }
-        ]
+    {
+        "title": "AR6 Synthesis Report",
+        "url": "https://report.ipcc.ch/ar6syr/pdf/IPCC_AR6_SYR_LongerReport.pdf",
+        "filename": "IPCC_AR6_SYR_LongerReport.pdf",
+        "category": "Assessment Report",
+        "year": 2023
+    },
+    {
+        "title": "AR6 WGI Summary for Policymakers", 
+        "url": "https://www.ipcc.ch/report/ar6/wg1/downloads/report/IPCC_AR6_WGI_SPM.pdf",
+        "filename": "IPCC_AR6_WGI_SPM.pdf",
+        "category": "Summary Report",
+        "year": 2021
+    }
+]
         
         for report in ipcc_reports:
             try:
@@ -188,21 +174,14 @@ class WorldBankDataSource(BaseDataSource):
         
         # World Bank climate reports
         wb_reports = [
-            {
-                "title": "State and Trends of Carbon Pricing 2023",
-                "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/download/pdf/state-trends-carbon-pricing-2023.pdf",
-                "filename": "WB_Carbon_Pricing_2023.pdf",
-                "category": "Policy Report",
-                "year": 2023
-            },
-            {
-                "title": "Climate Change Action Plan 2021-2025",
-                "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/download/pdf/world-bank-climate-action-plan.pdf",
-                "filename": "WB_Climate_Action_Plan_2021-2025.pdf",
-                "category": "Action Plan",
-                "year": 2021
-            }
-        ]
+    {
+        "title": "State and Trends of Carbon Pricing 2023",
+        "url": "https://openknowledge.worldbank.org/server/api/core/bitstreams/32e1ba97-1a47-5cce-86d3-50dfd5b045f6/content",
+        "filename": "WB_Carbon_Pricing_2023.pdf",
+        "category": "Policy Report", 
+        "year": 2023
+    }
+]
         
         for report in wb_reports:
             try:
